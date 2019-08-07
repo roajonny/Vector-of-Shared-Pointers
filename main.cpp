@@ -87,7 +87,7 @@ void fill(std::vector<std::shared_ptr<Test>> &vec, int num) {
 void display(const std::vector<std::shared_ptr<Test>>&vec) {
     std::cout << "Displaying vector data" << std::endl;
     std::cout << "=======================" << std::endl;
-    for (auto &elem: vec) {
+    for (const auto &elem: vec) {
         std::cout << elem->get_data() << std::endl;
     }
     std::cout << "=======================" << std::endl;
